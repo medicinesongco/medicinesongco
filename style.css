@@ -103,7 +103,7 @@ html, body {
 
 /* PeerTube default + hover */
 .peertube-link { color: var(--muted); }
-.peertube-link:hover { color: var(--accent-purple); }
+.peertube-link:hover { color: #f1680d; }
 
 .footer {
   margin-top: 3rem;
