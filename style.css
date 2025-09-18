@@ -12,6 +12,7 @@
 }
 
 * { box-sizing: border-box; }
+
 html, body {
   padding: 0;
   margin: 0;
@@ -32,6 +33,7 @@ html, body {
   padding: 0 1rem;
   text-align: center;
 }
+
 .logo {
   width: min(400px, 60vw);
   height: auto;
@@ -45,16 +47,18 @@ html, body {
   color: var(--fg);
   text-wrap: pretty;
 }
+
 /* Divider with lines left/right */
 .divider {
   display: flex;
   align-items: center;
-  color: var(--accent-purple);   /* now purple instead of muted gray */
+  color: var(--accent-purple);   /* purple instead of muted gray */
   text-transform: uppercase;
   font-size: 0.9rem;
   letter-spacing: 0.05em;
   margin: 2rem 0 1rem;
 }
+
 .divider::before,
 .divider::after {
   content: "";
@@ -67,6 +71,7 @@ html, body {
 .socials {
   margin: 0.5rem 0 1rem 0;
 }
+
 .socials a {
   margin: 0 10px;
   font-size: 1.7rem;
@@ -74,12 +79,20 @@ html, body {
   transition: color 0.25s ease;
 }
 
+/* SVG icon sizing + color inheritance */
+.social-icon {
+  width: 1.7rem;
+  height: 1.7rem;
+  display: inline-block;
+  vertical-align: middle;
+  fill: currentColor;   /* SVG paths inherit link color */
+}
+
 /* Hover colors per brand vibe */
 .socials a[aria-label="Email"]:hover { color: var(--accent-green); }
 .socials a[aria-label="Mastodon"]:hover { color: var(--accent-purple); }
 .socials a[aria-label="Bluesky"]:hover { color: var(--accent-pink); }
 .socials a[aria-label="PixelFed"]:hover { color: var(--accent-green); }
-.socials a[aria-label="TILvids (PeerTube)"]:hover { color: var(--accent-purple); }
 
 .socials a[aria-label="Instagram"]:hover { color: var(--accent-pink); }
 .socials a[aria-label="Facebook"]:hover { color: #3b82f6; }
@@ -87,6 +100,10 @@ html, body {
 .socials a[aria-label="TikTok"]:hover { color: var(--accent-green); }
 .socials a[aria-label="X"]:hover { color: var(--fg); }
 .socials a[aria-label="Reddit"]:hover { color: #f97316; }
+
+/* PeerTube default + hover */
+.peertube-link { color: var(--muted); }
+.peertube-link:hover { color: var(--accent-purple); }
 
 .footer {
   margin-top: 3rem;
@@ -100,9 +117,4 @@ html, body {
   .logo { width: 150px; }
   .blurb { font-size: 1rem; }
   .socials a { font-size: 1.5rem; margin: 0 8px; }
-/* Make inline SVG <img> behave like icons */
-
-.peertube-link { color: var(--muted); }
-.peertube-link:hover { color: var(--accent-purple); }
-
 }
