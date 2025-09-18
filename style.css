@@ -100,13 +100,22 @@ html, body {
   .logo { width: 150px; }
   .blurb { font-size: 1rem; }
   .socials a { font-size: 1.5rem; margin: 0 8px; }
-
-.si-icon {
-  width: 1.7rem;     /* match your .socials a { font-size: 1.7rem } */
+/* Make inline SVG <img> behave like icons */
+.social-icon {
+  width: 1.7rem;      /* match your other icons */
   height: 1.7rem;
   display: inline-block;
   vertical-align: middle;
 }
 
+/* Default muted gray */
+.socials a[aria-label="PeerTube"] {
+  color: var(--muted);
+}
+
+/* Hover = accent purple */
+.socials a[aria-label="PeerTube"]:hover {
+  color: var(--accent-purple);
+}
 
 }
