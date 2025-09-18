@@ -102,23 +102,7 @@ html, body {
   .socials a { font-size: 1.5rem; margin: 0 8px; }
 /* Make inline SVG <img> behave like icons */
 
-  .social-icon {
-  width: 1.7rem;       /* match your FA icons */
-  height: 1.7rem;
-  vertical-align: middle;
-  display: inline-block;
-  fill: currentColor;  /* critical: path uses this */
-}
-
-/* Default muted */
-.socials a[aria-label="PeerTube"] {
-  color: var(--muted);
-}
-
-/* Hover accent */
-.socials a[aria-label="PeerTube"]:hover {
-  color: var(--accent-purple);
-}
-
+.peertube-link { color: var(--muted); }
+.peertube-link:hover { color: var(--accent-purple); }
 
 }
