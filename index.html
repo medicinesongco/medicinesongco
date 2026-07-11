@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#0b0b0c" />
   <title>Medicine Song Company</title>
-
   <meta name="description" content="Exploring new directions in botanical design through the intersection of tradition and innovation" />
+  <link rel="canonical" href="https://medicinesong.co/" />
   <link rel="icon" href="logo.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="style.css" />
 
@@ -15,67 +15,71 @@
   <meta property="og:description" content="Exploring new directions in botanical design through the intersection of tradition and innovation" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://medicinesong.co/" />
+  <meta property="og:image" content="https://medicinesong.co/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Medicine Song Company" />
 
-  <!-- Font Awesome for icons (no integrity attribute to avoid blocking locally) -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+  <!-- Twitter / X card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Medicine Song Company" />
+  <meta name="twitter:description" content="Exploring new directions in botanical design through the intersection of tradition and innovation" />
+  <meta name="twitter:image" content="https://medicinesong.co/og-image.png" />
+
+  <!--
+    Font Awesome, self-hosted (no CDN, no SRI concerns).
+    Expects the folder structure from the official download zip preserved as-is:
+      /fontawesome/css/all.min.css
+      /fontawesome/webfonts/fa-*.woff2 (etc.)
+    The CSS references its fonts via relative "../webfonts/..." paths, so css/
+    and webfonts/ must stay siblings under /fontawesome/.
+  -->
+  <link rel="stylesheet" href="fontawesome/css/all.min.css" />
 </head>
 <body>
   <main class="container">
     <img src="logo.svg" alt="Medicine Song Company logo" class="logo" />
-
     <p class="blurb">
       Medicine Song Company is an ongoing study of plants and their possibilities. We draw from traditional knowledge, historical practice, and emerging science to explore new directions in botanical design.
     </p>
-
     <p class="blurb">
-      Our focus is on applying advanced technology and design to create new ways of supporting well-being.
+      Our focus is on applying advanced technique and design to create new expressions of flavor and form.
     </p>
-<br><br>
-    <p class="blurb">
+    <p class="blurb blurb-last">
       Stay connected to see what comes next.
     </p>
-
-        <div class="divider">Join us on our favorite platforms</div>
+    <div class="divider">Join us on our favorite platforms</div>
     <section class="contact">
-<!-- Row 1: Fediverse / alt socials -->
+      <!-- Row 1: Fediverse / alt socials -->
       <p class="socials">
-        <a href="https://bsky.app/profile/medicinesongco.bsky.social" target="_blank" rel="noopener" aria-label="Bluesky"><i class="fa-solid fa-cloud"></i></a>
-        <a href="https://mastodon.social/@medicinesongco" target="_blank" rel="noopener" aria-label="Mastodon"><i class="fab fa-mastodon"></i></a>
-        <a href="https://pixelfed.social/medicinesongco" target="_blank" rel="noopener" aria-label="PixelFed"><i class="fas fa-camera-retro"></i></a>
+        <a href="https://bsky.app/profile/medicinesongco.bsky.social" target="_blank" rel="noopener" aria-label="Bluesky"><i class="fa-solid fa-cloud" aria-hidden="true"></i></a>
+        <a href="https://mastodon.social/@medicinesongco" target="_blank" rel="noopener" aria-label="Mastodon"><i class="fab fa-mastodon" aria-hidden="true"></i></a>
+        <a href="https://pixelfed.social/medicinesongco" target="_blank" rel="noopener" aria-label="PixelFed"><i class="fas fa-camera-retro" aria-hidden="true"></i></a>
         <a href="https://peertube.wtf/c/medicinesongco"
    target="_blank" rel="noopener"
    aria-label="PeerTube"
    class="peertube-link">
-  <svg class="social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img">
-    <title>PeerTube</title>
+  <svg class="social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
     <path d="M12 6.545v10.91L20.727 12M3.273 12v12L12 17.455M3.273 0v12L12 6.545"/>
   </svg>
 </a>
    </p>
-
 <div class="divider">Other ways to connect with us</div>
       <!-- Row 2: Mainstream socials -->
       <p class="socials">
-        <a href="mailto:medicinesongco@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.instagram.com/medicinesongco/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/medicinesongco" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.youtube.com/@medicinesongco" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.tiktok.com/@medicinesongco" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-        <a href="https://x.com/medicinesongco" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x-twitter"></i></a>
-        <a href="https://www.reddit.com/user/medicinesongco/" target="_blank" rel="noopener" aria-label="Reddit"><i class="fab fa-reddit"></i></a>
+        <a href="mailto:medicinesongco@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/medicinesongco/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/medicinesongco" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+        <a href="https://www.youtube.com/@medicinesongco" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+        <a href="https://www.tiktok.com/@medicinesongco" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+        <a href="https://x.com/medicinesongco" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+        <a href="https://www.reddit.com/user/medicinesongco/" target="_blank" rel="noopener" aria-label="Reddit"><i class="fab fa-reddit" aria-hidden="true"></i></a>
       </p>
     </section>
-
     <footer class="footer">
-      <p>© <span id="year"></span> Medicine Song Company</p>
+      <p>&copy; <span id="year"></span> Medicine Song Company</p>
     </footer>
   </main>
-
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
